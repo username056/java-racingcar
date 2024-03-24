@@ -1,7 +1,31 @@
+import controller.RacingGameController;
+import view.InputValidator;
+import view.InputView;
+import view.OutputView;
+
+import java.util.Scanner;
+
 public class RacingMain {
 
     public static void main(String[] args) {
-        // TODO: MVC 패턴을 기반으로 자동차 경주 미션 구현해보기
-        System.out.println("Hello, World!");
+        RacingGameController racingGameController = new RacingGameController(inputView(), outputView());
+        racingGameController.run();
     }
+
+    private static InputView inputView() {
+        return new InputView(inputValidator(), scanner());
+    }
+
+    private static Scanner scanner() {
+        return new Scanner(System.in);
+    }
+
+    private static InputValidator inputValidator() {
+        return new InputValidator();
+    }
+
+    private static OutputView outputView() {
+        return new OutputView();
+    }
+
 }
