@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PositionTest {
 
     @Test
-    @DisplayName("Position의 초기값은 0")
+    @DisplayName("Position 초기값은 0")
     void should_initValueIsZero_when_createPosition() {
         Position position = new Position();
 

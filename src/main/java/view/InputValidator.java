@@ -31,7 +31,7 @@ public class InputValidator {
     }
 
     private void validateName(final String name) {
-        if (name.length() < NAME_LENGTH_LOWER_BOUND || name.length() > NAME_LENGTH_UPPER_BOUND) {
+        if (name.isEmpty() || name.length() > NAME_LENGTH_UPPER_BOUND) {
             throw new IllegalArgumentException(format(
                     INVALID_NAME_MESSAGE,
                     NAME_LENGTH_LOWER_BOUND,

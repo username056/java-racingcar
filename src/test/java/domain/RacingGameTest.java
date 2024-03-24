@@ -12,7 +12,7 @@ public class RacingGameTest {
 
     private RacingGame generateRacingGame(final int count) {
         NumberGenerator numberGenerator
-            = new TestNumberGenerator(Lists.newArrayList(4, 3));
+                = new TestNumberGenerator(Lists.newArrayList(4, 3));
         List<String> names = List.of("car1", "car2");
         return new RacingGame(numberGenerator, names, count);
     }

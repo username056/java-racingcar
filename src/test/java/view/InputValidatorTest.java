@@ -17,8 +17,8 @@ public class InputValidatorTest {
     @ParameterizedTest
     @ValueSource(strings = {", ,", "", "  ,안녕", "abcdefg"})
     @DisplayName("validateNames 메서드는 올바른 차 이름이 아닐 시 예외 던짐")
-    void should_throwException_when_invalidateNmaes(final String input) {
-        assertThatThrownBy(()->inputValidator.validateNames(input))
+    void should_throwException_when_invalidateNames(final String input) {
+        assertThatThrownBy(() -> inputValidator.validateNames(input))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("차의 이름은 1자 이상, 5자 이하여야 합니다.");
     }

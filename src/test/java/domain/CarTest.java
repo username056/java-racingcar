@@ -19,7 +19,7 @@ public class CarTest {
     }
 
     @Test
-    @DisplayName("isSamePosition 메서드는 위치 다르면 false를 반환")
+    @DisplayName("isSamePosition 메서드는 위치 다르면 false 반환")
     void should_returnFalse_when_positionIsNotSame() {
         Car car = new Car("aaa");
         car.move(Integer.MAX_VALUE);
