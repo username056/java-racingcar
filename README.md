@@ -17,36 +17,36 @@
 
 ```
 경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분).
-kokodak,kuku,cucu
+koko,kuku,cucu
 시도할 회수는 몇회인가요?
 5
 
 실행 결과
-kokodak : -
+koko : -
 kuku : -
 cucu : -
 
-kokodak : --
+koko : --
 kuku : -
 cucu : --
 
-kokodak : ---
+koko : ---
 kuku : --
 cucu : ---
 
-kokodak : ----
+koko : ----
 kuku : ---
 cucu : ----
 
-kokodak : -----
+koko : -----
 kuku : ----
 cucu : -----
 
-kokodak : -----
+koko : -----
 kuku : ----
 cucu : -----
 
-kokodak, cucu가 최종 우승했습니다.
+koko, cucu가 최종 우승했습니다.
 ```
 
 ## **프로그래밍 요구사항**
